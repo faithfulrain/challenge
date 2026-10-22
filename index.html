@@ -1,306 +1,290 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>6.6 English Hub</title>
+<style>
+:root{--cream:#FFF4E6;--card:#FFFDF8;--navy:#1E2A5A;--coral:#FF7A6B;--yellow:#FFD84D;--slate:#8A94BD}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--navy);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden}
+body:before{content:"";position:fixed;top:-90px;right:-90px;width:260px;height:260px;border-radius:50%;background:var(--slate);opacity:.55;z-index:-1}
+body:after{content:"";position:fixed;bottom:-110px;left:-90px;width:260px;height:260px;border-radius:50%;background:var(--yellow);opacity:.7;z-index:-1}
+header,main,footer{max-width:920px;margin:0 auto;padding:0 16px}
+header{padding-top:18px}
+h1{font-size:clamp(2rem,7vw,3.4rem);margin:.2em 0 .1em;word-spacing:.18em;letter-spacing:.01em;line-height:1.1}
+h2{font-size:clamp(1.5rem,5vw,2.1rem);word-spacing:.15em;margin:1.4em 0 .5em}
+h3{font-size:1rem;margin:0 0 .3em;text-transform:uppercase;letter-spacing:.06em;word-spacing:.15em}
+.tag{margin:0 0 .8em;font-weight:600}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 6px}
+nav a{padding:.4em 1em;border:2px solid var(--navy);border-radius:999px;text-decoration:none;color:var(--navy);font-weight:800}
+nav a.on{background:var(--yellow)}
+.btn,summary.btn{display:inline-block;background:var(--coral);color:var(--navy);border:2px solid var(--navy);border-radius:999px;padding:.6em 1.3em;min-height:48px;font:inherit;font-weight:800;text-decoration:none;box-shadow:0 4px 0 var(--navy);cursor:pointer;text-align:center;list-style:none}
+summary.btn::-webkit-details-marker{display:none}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--navy)}
+.btn.off{background:#EDE4D5;border-style:dashed;box-shadow:none;color:#7C819B;cursor:default;pointer-events:none}
+.btn.small{padding:.35em 1em;min-height:40px;font-size:.95rem;margin:3px 0}
+.card{background:var(--card);border:2px solid var(--navy);border-radius:28px;box-shadow:0 6px 0 rgba(30,42,90,.14);padding:18px;margin:14px 0}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0;align-items:start}
+details.card{padding:0;overflow:hidden}
+details.card summary{margin:12px}
+details.card .inner{padding:0 18px 16px}
+.latest{background:#FFE8DF}
+.big-date{font-size:clamp(1.8rem,6vw,2.6rem);font-weight:900;word-spacing:.2em;margin:.1em 0 .4em}
+.row{display:flex;gap:14px;align-items:center;padding:12px 16px;margin:10px 0;border:2px solid var(--navy);border-radius:22px;background:var(--card);text-decoration:none;color:var(--navy)}
+.row b{min-width:7.5em;word-spacing:.15em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.grid .btn{padding:1em .5em}
+.lesson{display:grid;gap:16px}
+.badge{background:var(--coral);border:2px solid var(--navy);border-radius:22px;text-align:center;padding:10px;display:flex;flex-direction:column;line-height:1.1;align-self:start}
+.badge .wd{font-weight:800;font-size:1.2rem;letter-spacing:.12em}
+.badge .day{font-weight:900;font-size:3.4rem}
+.badge .mo{font-weight:800;font-size:1.1rem}
+.parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.part{border-top:3px dashed var(--slate);padding-top:10px}
+.part.wide{grid-column:1/-1}
+ul{margin:.2em 0;padding-left:1.2em}
+ul.plain{list-style:none;padding:0}
+.soon{color:#6B7194;font-style:italic;margin:.2em 0}
+.test{font-weight:800;margin:.4em 0 0}
+label.chk{display:flex;gap:12px;align-items:flex-start;padding:8px 4px;border-bottom:1px dashed var(--slate);cursor:pointer}
+label.chk input{width:26px;height:26px;accent-color:var(--coral);flex:none}
+@media(min-width:760px){.lesson{grid-template-columns:150px 1fr}}
+footer{padding:24px 16px 40px;font-size:.9rem;color:#4A5280}
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="utf-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
-<p class="p1">&lt;title&gt;6.6 English Hub&lt;/title&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">:root{--cream:#FFF4E6;--card:#FFFDF8;--navy:#1E2A5A;--coral:#FF7A6B;--yellow:#FFD84D;--slate:#8A94BD}</p>
-<p class="p1">*{box-sizing:border-box}</p>
-<p class="p1">body{margin:0;background:var(--cream);color:var(--navy);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;font-size:18px;line-height:1.5;overflow-x:hidden}</p>
-<p class="p1">body:before{content:"";position:fixed;top:-90px;right:-90px;width:260px;height:260px;border-radius:50%;background:var(--slate);opacity:.55;z-index:-1}</p>
-<p class="p1">body:after{content:"";position:fixed;bottom:-110px;left:-90px;width:260px;height:260px;border-radius:50%;background:var(--yellow);opacity:.7;z-index:-1}</p>
-<p class="p1">header,main,footer{max-width:920px;margin:0 auto;padding:0 16px}</p>
-<p class="p1">header{padding-top:18px}</p>
-<p class="p1">h1{font-size:clamp(2rem,7vw,3.4rem);margin:.2em 0 .1em;word-spacing:.18em;letter-spacing:.01em;line-height:1.1}</p>
-<p class="p1">h2{font-size:clamp(1.5rem,5vw,2.1rem);word-spacing:.15em;margin:1.4em 0 .5em}</p>
-<p class="p1">h3{font-size:1rem;margin:0 0 .3em;text-transform:uppercase;letter-spacing:.06em;word-spacing:.15em}</p>
-<p class="p1">.tag{margin:0 0 .8em;font-weight:600}</p>
-<p class="p1">nav{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 6px}</p>
-<p class="p1">nav a{padding:.4em 1em;border:2px solid var(--navy);border-radius:999px;text-decoration:none;color:var(--navy);font-weight:800}</p>
-<p class="p1">nav a.on{background:var(--yellow)}</p>
-<p class="p1">.btn,summary.btn{display:inline-block;background:var(--coral);color:var(--navy);border:2px solid var(--navy);border-radius:999px;padding:.6em 1.3em;min-height:48px;font:inherit;font-weight:800;text-decoration:none;box-shadow:0 4px 0 var(--navy);cursor:pointer;text-align:center;list-style:none}</p>
-<p class="p1">summary.btn::-webkit-details-marker{display:none}</p>
-<p class="p1">.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--navy)}</p>
-<p class="p1">.btn.off{background:#EDE4D5;border-style:dashed;box-shadow:none;color:#7C819B;cursor:default;pointer-events:none}</p>
-<p class="p1">.btn.small{padding:.35em 1em;min-height:40px;font-size:.95rem;margin:3px 0}</p>
-<p class="p1">.card{background:var(--card);border:2px solid var(--navy);border-radius:28px;box-shadow:0 6px 0 rgba(30,42,90,.14);padding:18px;margin:14px 0}</p>
-<p class="p1">.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0;align-items:start}</p>
-<p class="p1">details.card{padding:0;overflow:hidden}</p>
-<p class="p1">details.card summary{margin:12px}</p>
-<p class="p1">details.card .inner{padding:0 18px 16px}</p>
-<p class="p1">.latest{background:#FFE8DF}</p>
-<p class="p1">.big-date{font-size:clamp(1.8rem,6vw,2.6rem);font-weight:900;word-spacing:.2em;margin:.1em 0 .4em}</p>
-<p class="p1">.row{display:flex;gap:14px;align-items:center;padding:12px 16px;margin:10px 0;border:2px solid var(--navy);border-radius:22px;background:var(--card);text-decoration:none;color:var(--navy)}</p>
-<p class="p1">.row b{min-width:7.5em;word-spacing:.15em}</p>
-<p class="p1">.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}</p>
-<p class="p1">.grid .btn{padding:1em .5em}</p>
-<p class="p1">.lesson{display:grid;gap:16px}</p>
-<p class="p1">.badge{background:var(--coral);border:2px solid var(--navy);border-radius:22px;text-align:center;padding:10px;display:flex;flex-direction:column;line-height:1.1;align-self:start}</p>
-<p class="p1">.badge .wd{font-weight:800;font-size:1.2rem;letter-spacing:.12em}</p>
-<p class="p1">.badge .day{font-weight:900;font-size:3.4rem}</p>
-<p class="p1">.badge .mo{font-weight:800;font-size:1.1rem}</p>
-<p class="p1">.parts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}</p>
-<p class="p1">.part{border-top:3px dashed var(--slate);padding-top:10px}</p>
-<p class="p1">.part.wide{grid-column:1/-1}</p>
-<p class="p1">ul{margin:.2em 0;padding-left:1.2em}</p>
-<p class="p1">ul.plain{list-style:none;padding:0}</p>
-<p class="p1">.soon{color:#6B7194;font-style:italic;margin:.2em 0}</p>
-<p class="p1">.test{font-weight:800;margin:.4em 0 0}</p>
-<p class="p1">label.chk{display:flex;gap:12px;align-items:flex-start;padding:8px 4px;border-bottom:1px dashed var(--slate);cursor:pointer}</p>
-<p class="p1">label.chk input{width:26px;height:26px;accent-color:var(--coral);flex:none}</p>
-<p class="p1">@media(min-width:760px){.lesson{grid-template-columns:150px 1fr}}</p>
-<p class="p1">footer{padding:24px 16px 40px;font-size:.9rem;color:#4A5280}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;6.6 English Hub&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="tag"&gt;Your class website for learning and fun&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#home"&gt;Home&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#revision"&gt;Revision&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="#ket"&gt;KET corner&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p1">&lt;main id="app"&gt;&lt;/main&gt;</p>
-<p class="p1">&lt;footer&gt;Tick boxes are saved on your own device only. Please do not write personal information on any class page.&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">/* ================================================================</p>
-<p class="p1"><span class="Apple-converted-space">   </span>HOW TO ADD A LESSON (about 30 seconds)</p>
-<p class="p1"><span class="Apple-converted-space">   </span>1. Copy one entry in LESSONS below, paste it at the top of the list.</p>
-<p class="p1"><span class="Apple-converted-space">   </span>2. Change the date, the text, and the links. Keep the commas!</p>
-<p class="p1"><span class="Apple-converted-space">   </span>3. Save. The newest lesson shows on top by itself.</p>
-<p class="p1"><span class="Apple-converted-space">   </span>Cancelled lesson: { date:"2026-10-15", book:6, cancelled:true, note:"..." }</p>
-<p class="p1"><span class="Apple-converted-space">   </span>================================================================ */</p>
-<p class="p2"><br></p>
-<p class="p1">const CONFIG = {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>books: [6, 7, 8, 9, 10, 11],<span class="Apple-converted-space">          </span>// Books with no lessons yet show as "coming soon"</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padletQA: "",<span class="Apple-converted-space">                          </span>// paste your Padlet Q&amp;A board link between the quotes</p>
-<p class="p1"><span class="Apple-converted-space">  </span>padletChat: "",<span class="Apple-converted-space">                        </span>// paste your Padlet chat board link between the quotes</p>
-<p class="p1"><span class="Apple-converted-space">  </span>semesterEnd: "2027-01-31", <span class="Apple-converted-space">            </span>// last date counted for "Semester exam revision" (CHANGE ME)</p>
-<p class="p1"><span class="Apple-converted-space">  </span>rules: [</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"Be kind. We are all learning.",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"Use English when you can.",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"Use your first name or a nickname only.",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"Never share personal information (address, phone, school).",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"Ask questions in the Q&amp;A board. Your teacher can see everything."</p>
-<p class="p1"><span class="Apple-converted-space">  </span>],</p>
-<p class="p1"><span class="Apple-converted-space">  </span>dates: [</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// { when: "2026-12-14", what: "Book 6 test" },</p>
-<p class="p1"><span class="Apple-converted-space">  </span>],</p>
-<p class="p1"><span class="Apple-converted-space">  </span>revisionLinks: { <span class="Apple-converted-space">                      </span>// extra links for revision pages</p>
-<p class="p1"><span class="Apple-converted-space">    </span>"book-6": [], "semester": [], "year": []</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// example: [{ label: "Quizlet: Transportation", url: "https://quizlet.com/..." }]</p>
-<p class="p1"><span class="Apple-converted-space">  </span>},</p>
-<p class="p1"><span class="Apple-converted-space">  </span>ket: {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>about: [], <span class="Apple-converted-space">                          </span>// short lines about the exam (add later)</p>
-<p class="p1"><span class="Apple-converted-space">    </span>official: [],<span class="Apple-converted-space">                        </span>// official free practice links</p>
-<p class="p1"><span class="Apple-converted-space">    </span>quizlets: [],<span class="Apple-converted-space">                        </span>// your vocabulary Quizlets</p>
-<p class="p1"><span class="Apple-converted-space">    </span>mocks: []<span class="Apple-converted-space">                            </span>// e.g. { label: "Mock exam 1", note: "Monday 12 January" }</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">};</p>
-<p class="p2"><br></p>
-<p class="p1">const LESSONS = [</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{ date:"2026-10-19", book:6,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>did:["Present Perfect","Time for Everyday English: intro"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>test:"Would you rather?",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>homework:["Page 12, exercises 1 and 2","Page 13, exercise 5"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>practice:[], games:[] },</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{ date:"2026-10-15", book:6, cancelled:true,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>note:"No lesson. It will be made up later. Homework for this date was set for 19 October." },</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{ date:"2026-10-12", book:6,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>did:["Would you rather?","Comic reading: Cool Kids on the Block, Episode 11"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>test:"Transportation vocabulary",</p>
-<p class="p1"><span class="Apple-converted-space">    </span>homework:["Page 9, exercise 10"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>practice:[], games:[] },</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{ date:"2026-10-08", book:6,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>did:["Time for New Words: Transportation","on / in / by"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>homework:[], practice:[], games:[] },</p>
-<p class="p1"><span class="Apple-converted-space">  </span>{ date:"2026-10-05", book:6,</p>
-<p class="p1"><span class="Apple-converted-space">    </span>did:["Around the World (pages 6 and 7)"],</p>
-<p class="p1"><span class="Apple-converted-space">    </span>homework:[], practice:[], games:[] }</p>
-<p class="p1">];</p>
-<p class="p2"><br></p>
-<p class="p1">/* ---------------- everything below runs the page; no need to edit ---------------- */</p>
-<p class="p1">const app = document.getElementById('app');</p>
-<p class="p1">const parse = s =&gt; { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };</p>
-<p class="p1">const fmt = (d,o) =&gt; d.toLocaleDateString('en-GB', o);</p>
-<p class="p1">const longDate = s =&gt; { const d = parse(s); return fmt(d,{weekday:'short'}) + ' ' + d.getDate() + ' ' + fmt(d,{month:'long'}); };</p>
-<p class="p1">const desc = (a,b) =&gt; b.date.localeCompare(a.date);</p>
-<p class="p1">const asc = (a,b) =&gt; a.date.localeCompare(b.date);</p>
-<p class="p1">const taught = () =&gt; LESSONS.filter(l =&gt; !l.cancelled);</p>
-<p class="p2"><br></p>
-<p class="p1">function h(tag, props = {}, ...kids) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const e = document.createElement(tag);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>for (const [k,v] of Object.entries(props)) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (k === 'class') e.className = v;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>else if (k === 'text') e.textContent = v;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>else e.setAttribute(k, v);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>kids.flat().forEach(c =&gt; { if (c == null) return; e.append(c.nodeType ? c : document.createTextNode(c)); });</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return e;</p>
-<p class="p1">}</p>
-<p class="p1">const safe = u =&gt; /^https?:\/\//i.test(u || '');</p>
-<p class="p1">function list(arr, empty) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (!arr || !arr.length) return h('p', {class:'soon', text: empty || 'Coming soon'});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return h('ul', {}, arr.map(t =&gt; h('li', {text: t})));</p>
-<p class="p1">}</p>
-<p class="p1">function links(arr) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const ok = (arr || []).filter(x =&gt; safe(x.url));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (!ok.length) return h('p', {class:'soon', text:'Coming soon'});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return h('ul', {class:'plain'}, ok.map(x =&gt; h('li', {}, h('a', {class:'btn small', href:x.url, target:'_blank', rel:'noopener', text:x.label}))));</p>
-<p class="p1">}</p>
-<p class="p1">function chatLinks() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const items = [];</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (safe(CONFIG.padletQA)) items.push({label:'Ask the teacher (Q&amp;A)', url:CONFIG.padletQA});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (safe(CONFIG.padletChat)) items.push({label:'Class chat', url:CONFIG.padletChat});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return links(items);</p>
-<p class="p1">}</p>
-<p class="p1">const part = (title, ...content) =&gt; h('div', {class:'part'}, h('h3', {text:title}), content);</p>
-<p class="p1">const activeBooks = () =&gt; [...new Set(LESSONS.map(l =&gt; l.book))].sort((a,b) =&gt; a-b);</p>
-<p class="p2"><br></p>
-<p class="p1">function lessonBlock(l) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const d = parse(l.date);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const badge = h('div', {class:'badge'},</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h('span', {class:'wd', text: fmt(d,{weekday:'short'}).toUpperCase()}),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h('span', {class:'day', text: String(d.getDate())}),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h('span', {class:'mo', text: fmt(d,{month:'long'}).toUpperCase()}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const box = h('article', {class:'card lesson', id:'lesson-' + l.date}, badge);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (l.cancelled) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box.append(h('div', {class:'parts'}, h('div', {class:'part wide'}, h('h3', {text:'No lesson'}), h('p', {text:l.note || 'This lesson was cancelled.'}))));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>return box;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>box.append(h('div', {class:'parts'},</p>
-<p class="p1"><span class="Apple-converted-space">    </span>part('What we did', list(l.did), l.test ? h('p', {class:'test', text:'Short test: ' + l.test}) : null),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>part('Homework', list(l.homework, 'No homework')),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>part('Practice and extra resources', links(l.practice)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>part('Games and fun practice', links(l.games)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>part('Ask / chat', chatLinks())));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return box;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function homePage() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const wrap = h('div');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const rules = h('details', {class:'card'}, h('summary', {class:'btn', text:'Class rules'}), h('div', {class:'inner'}, list(CONFIG.rules)));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const dates = h('details', {class:'card'}, h('summary', {class:'btn', text:'Important dates'}),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h('div', {class:'inner'}, list(CONFIG.dates.map(x =&gt; longDate(x.when) + ': ' + x.what), 'No dates yet')));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const chat = h('div', {class:'card', style:'padding:12px'}, h('div', {}, chatLinks()));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>chat.prepend(h('h3', {text:'Ask and chat'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(h('div', {class:'strip'}, rules, dates, chat));</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>const sorted = [...LESSONS].sort(desc);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const latest = sorted.find(l =&gt; !l.cancelled);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (latest) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>wrap.append(h('section', {class:'card latest'},</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h('h3', {text:'Latest lesson'}),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h('p', {class:'big-date', text: longDate(latest.date)}),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>part('What we did', list(latest.did), latest.test ? h('p', {class:'test', text:'Short test: ' + latest.test}) : null),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>part('Homework', list(latest.homework, 'No homework')),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h('p', {}, h('a', {class:'btn', href:'#book-' + latest.book + '/' + latest.date, text:'Open full lesson'}))));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>wrap.append(h('h2', {text:'Previous lessons'}));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>sorted.filter(l =&gt; l !== latest).slice(0, 4).forEach(l =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>wrap.append(h('a', {class:'row', href:'#book-' + l.book + '/' + l.date},</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h('b', {text: longDate(l.date)}),</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h('span', {text: l.cancelled ? 'No lesson' : (l.did || []).join(', ')})));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(h('h2', {text:'Books'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const act = activeBooks();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const grid = h('div', {class:'grid'});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>CONFIG.books.forEach(n =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>grid.append(act.includes(n)</p>
-<p class="p1"><span class="Apple-converted-space">      </span>? h('a', {class:'btn', href:'#book-' + n, text:'Book ' + n})</p>
-<p class="p1"><span class="Apple-converted-space">      </span>: h('span', {class:'btn off', text:'Book ' + n + ' (soon)'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(grid);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(h('p', {}, h('a', {class:'btn', href:'#revision', text:'Revision and exams'}), ' ', h('a', {class:'btn', href:'#ket', text:'KET (A2 Key) corner'})));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function bookPage(n) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const wrap = h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'Book ' + n + ' – Lessons'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const ls = LESSONS.filter(l =&gt; l.book === n).sort(desc);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (!ls.length) wrap.append(h('p', {class:'card soon', text:'Coming soon.'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>ls.forEach(l =&gt; wrap.append(lessonBlock(l)));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function store() { try { return JSON.parse(localStorage.getItem('hub-checks') || '{}'); } catch (e) { return {}; } }</p>
-<p class="p1">function saveStore(o) { try { localStorage.setItem('hub-checks', JSON.stringify(o)); } catch (e) {} }</p>
-<p class="p2"><br></p>
-<p class="p1">function checklist(key, filterFn) {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const seen = new Set(), items = [];</p>
-<p class="p1"><span class="Apple-converted-space">  </span>taught().filter(filterFn).sort(asc).forEach(l =&gt; (l.did || []).forEach(t =&gt; { if (!seen.has(t)) { seen.add(t); items.push(t); } }));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const saved = store();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const box = h('div', {});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (!items.length) box.append(h('p', {class:'soon', text:'Topics appear here after each lesson.'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>items.forEach(t =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const id = key + '|' + t;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const cb = h('input', {type:'checkbox'});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cb.checked = !!saved[id];</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cb.addEventListener('change', () =&gt; { const s = store(); s[id] = cb.checked; saveStore(s); });</p>
-<p class="p1"><span class="Apple-converted-space">    </span>box.append(h('label', {class:'chk'}, cb, h('span', {text:t})));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>});</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return box;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function revisionPage() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const wrap = h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'Revision and exams'}),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h('p', {text:'Topics are added automatically after each lesson. Tick what you have revised.'}));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const section = (title, key, fn, open) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const d = h('details', {class:'card'}, h('summary', {class:'btn', text:title}),</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h('div', {class:'inner'}, checklist(key, fn), h('h3', {text:'Extra practice'}), links(CONFIG.revisionLinks[key])));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (open) d.setAttribute('open', '');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>return d;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>};</p>
-<p class="p1"><span class="Apple-converted-space">  </span>activeBooks().forEach(n =&gt; wrap.append(section('Book ' + n + ' test revision', 'book-' + n, l =&gt; l.book === n, true)));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(section('Semester exam revision', 'semester', l =&gt; l.date &lt;= CONFIG.semesterEnd));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>wrap.append(section('End of year exam revision', 'year', () =&gt; true));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return wrap;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function ketPage() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const k = CONFIG.ket;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const block = (title, content) =&gt; h('section', {class:'card'}, h('h3', {text:title}), content);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>return h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'KET (A2 Key) corner'}),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>block('What is in the exam', list(k.about)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>block('Official free practice', links(k.official)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>block('Our vocabulary Quizlets', links(k.quizlets)),</p>
-<p class="p1"><span class="Apple-converted-space">    </span>block('Mock exam dates', list((k.mocks || []).map(m =&gt; m.label + (m.note ? ': ' + m.note : '')), 'Coming soon')));</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">function render() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const [page, anchor] = (location.hash.slice(1) || 'home').split('/');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>app.replaceChildren();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (page.startsWith('book-')) app.append(bookPage(Number(page.slice(5))));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>else if (page === 'revision') app.append(revisionPage());</p>
-<p class="p1"><span class="Apple-converted-space">  </span>else if (page === 'ket') app.append(ketPage());</p>
-<p class="p1"><span class="Apple-converted-space">  </span>else app.append(homePage());</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const cur = page.startsWith('book-') ? 'home' : page;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>document.querySelectorAll('nav a').forEach(a =&gt; a.classList.toggle('on', a.getAttribute('href') === '#' + cur));</p>
-<p class="p1"><span class="Apple-converted-space">  </span>const target = anchor &amp;&amp; document.getElementById('lesson-' + anchor);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (target) target.scrollIntoView(); else window.scrollTo(0, 0);</p>
-<p class="p1">}</p>
-<p class="p1">window.addEventListener('hashchange', render);</p>
-<p class="p1">render();</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<header>
+  <h1>6.6 English Hub</h1>
+  <p class="tag">Your class website for learning and fun</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#revision">Revision</a>
+    <a href="#ket">KET corner</a>
+  </nav>
+</header>
+<main id="app"></main>
+<footer>Tick boxes are saved on your own device only. Please do not write personal information on any class page.</footer>
+
+<script>
+/* ================================================================
+   HOW TO ADD A LESSON (about 30 seconds)
+   1. Copy one entry in LESSONS below, paste it at the top of the list.
+   2. Change the date, the text, and the links. Keep the commas!
+   3. Save. The newest lesson shows on top by itself.
+   Cancelled lesson: { date:"2026-10-15", book:6, cancelled:true, note:"..." }
+   ================================================================ */
+
+const CONFIG = {
+  books: [6, 7, 8, 9, 10, 11],          // Books with no lessons yet show as "coming soon"
+  padletQA: "",                          // paste your Padlet Q&A board link between the quotes
+  padletChat: "",                        // paste your Padlet chat board link between the quotes
+  semesterEnd: "2027-01-31",             // last date counted for "Semester exam revision" (CHANGE ME)
+  rules: [
+    "Be kind. We are all learning.",
+    "Use English when you can.",
+    "Use your first name or a nickname only.",
+    "Never share personal information (address, phone, school).",
+    "Ask questions in the Q&A board. Your teacher can see everything."
+  ],
+  dates: [
+    // { when: "2026-12-14", what: "Book 6 test" },
+  ],
+  revisionLinks: {                       // extra links for revision pages
+    "book-6": [], "semester": [], "year": []
+    // example: [{ label: "Quizlet: Transportation", url: "https://quizlet.com/..." }]
+  },
+  ket: {
+    about: [],                           // short lines about the exam (add later)
+    official: [],                        // official free practice links
+    quizlets: [],                        // your vocabulary Quizlets
+    mocks: []                            // e.g. { label: "Mock exam 1", note: "Monday 12 January" }
+  }
+};
+
+const LESSONS = [
+  { date:"2026-10-19", book:6,
+    did:["Present Perfect","Time for Everyday English: intro"],
+    test:"Would you rather?",
+    homework:["Page 12, exercises 1 and 2","Page 13, exercise 5"],
+    practice:[], games:[] },
+  { date:"2026-10-15", book:6, cancelled:true,
+    note:"No lesson. It will be made up later. Homework for this date was set for 19 October." },
+  { date:"2026-10-12", book:6,
+    did:["Would you rather?","Comic reading: Cool Kids on the Block, Episode 11"],
+    test:"Transportation vocabulary",
+    homework:["Page 9, exercise 10"],
+    practice:[], games:[] },
+  { date:"2026-10-08", book:6,
+    did:["Time for New Words: Transportation","on / in / by"],
+    homework:[], practice:[], games:[] },
+  { date:"2026-10-05", book:6,
+    did:["Around the World (pages 6 and 7)"],
+    homework:[], practice:[], games:[] }
+];
+
+/* ---------------- everything below runs the page; no need to edit ---------------- */
+const app = document.getElementById('app');
+const parse = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };
+const fmt = (d,o) => d.toLocaleDateString('en-GB', o);
+const longDate = s => { const d = parse(s); return fmt(d,{weekday:'short'}) + ' ' + d.getDate() + ' ' + fmt(d,{month:'long'}); };
+const desc = (a,b) => b.date.localeCompare(a.date);
+const asc = (a,b) => a.date.localeCompare(b.date);
+const taught = () => LESSONS.filter(l => !l.cancelled);
+
+function h(tag, props = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k,v] of Object.entries(props)) {
+    if (k === 'class') e.className = v;
+    else if (k === 'text') e.textContent = v;
+    else e.setAttribute(k, v);
+  }
+  kids.flat().forEach(c => { if (c == null) return; e.append(c.nodeType ? c : document.createTextNode(c)); });
+  return e;
+}
+const safe = u => /^https?:\/\//i.test(u || '');
+function list(arr, empty) {
+  if (!arr || !arr.length) return h('p', {class:'soon', text: empty || 'Coming soon'});
+  return h('ul', {}, arr.map(t => h('li', {text: t})));
+}
+function links(arr) {
+  const ok = (arr || []).filter(x => safe(x.url));
+  if (!ok.length) return h('p', {class:'soon', text:'Coming soon'});
+  return h('ul', {class:'plain'}, ok.map(x => h('li', {}, h('a', {class:'btn small', href:x.url, target:'_blank', rel:'noopener', text:x.label}))));
+}
+function chatLinks() {
+  const items = [];
+  if (safe(CONFIG.padletQA)) items.push({label:'Ask the teacher (Q&A)', url:CONFIG.padletQA});
+  if (safe(CONFIG.padletChat)) items.push({label:'Class chat', url:CONFIG.padletChat});
+  return links(items);
+}
+const part = (title, ...content) => h('div', {class:'part'}, h('h3', {text:title}), content);
+const activeBooks = () => [...new Set(LESSONS.map(l => l.book))].sort((a,b) => a-b);
+
+function lessonBlock(l) {
+  const d = parse(l.date);
+  const badge = h('div', {class:'badge'},
+    h('span', {class:'wd', text: fmt(d,{weekday:'short'}).toUpperCase()}),
+    h('span', {class:'day', text: String(d.getDate())}),
+    h('span', {class:'mo', text: fmt(d,{month:'long'}).toUpperCase()}));
+  const box = h('article', {class:'card lesson', id:'lesson-' + l.date}, badge);
+  if (l.cancelled) {
+    box.append(h('div', {class:'parts'}, h('div', {class:'part wide'}, h('h3', {text:'No lesson'}), h('p', {text:l.note || 'This lesson was cancelled.'}))));
+    return box;
+  }
+  box.append(h('div', {class:'parts'},
+    part('What we did', list(l.did), l.test ? h('p', {class:'test', text:'Short test: ' + l.test}) : null),
+    part('Homework', list(l.homework, 'No homework')),
+    part('Practice and extra resources', links(l.practice)),
+    part('Games and fun practice', links(l.games)),
+    part('Ask / chat', chatLinks())));
+  return box;
+}
+
+function homePage() {
+  const wrap = h('div');
+  const rules = h('details', {class:'card'}, h('summary', {class:'btn', text:'Class rules'}), h('div', {class:'inner'}, list(CONFIG.rules)));
+  const dates = h('details', {class:'card'}, h('summary', {class:'btn', text:'Important dates'}),
+    h('div', {class:'inner'}, list(CONFIG.dates.map(x => longDate(x.when) + ': ' + x.what), 'No dates yet')));
+  const chat = h('div', {class:'card', style:'padding:12px'}, h('div', {}, chatLinks()));
+  chat.prepend(h('h3', {text:'Ask and chat'}));
+  wrap.append(h('div', {class:'strip'}, rules, dates, chat));
+
+  const sorted = [...LESSONS].sort(desc);
+  const latest = sorted.find(l => !l.cancelled);
+  if (latest) {
+    wrap.append(h('section', {class:'card latest'},
+      h('h3', {text:'Latest lesson'}),
+      h('p', {class:'big-date', text: longDate(latest.date)}),
+      part('What we did', list(latest.did), latest.test ? h('p', {class:'test', text:'Short test: ' + latest.test}) : null),
+      part('Homework', list(latest.homework, 'No homework')),
+      h('p', {}, h('a', {class:'btn', href:'#book-' + latest.book + '/' + latest.date, text:'Open full lesson'}))));
+    wrap.append(h('h2', {text:'Previous lessons'}));
+    sorted.filter(l => l !== latest).slice(0, 4).forEach(l => {
+      wrap.append(h('a', {class:'row', href:'#book-' + l.book + '/' + l.date},
+        h('b', {text: longDate(l.date)}),
+        h('span', {text: l.cancelled ? 'No lesson' : (l.did || []).join(', ')})));
+    });
+  }
+  wrap.append(h('h2', {text:'Books'}));
+  const act = activeBooks();
+  const grid = h('div', {class:'grid'});
+  CONFIG.books.forEach(n => {
+    grid.append(act.includes(n)
+      ? h('a', {class:'btn', href:'#book-' + n, text:'Book ' + n})
+      : h('span', {class:'btn off', text:'Book ' + n + ' (soon)'}));
+  });
+  wrap.append(grid);
+  wrap.append(h('p', {}, h('a', {class:'btn', href:'#revision', text:'Revision and exams'}), ' ', h('a', {class:'btn', href:'#ket', text:'KET (A2 Key) corner'})));
+  return wrap;
+}
+
+function bookPage(n) {
+  const wrap = h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'Book ' + n + ' – Lessons'}));
+  const ls = LESSONS.filter(l => l.book === n).sort(desc);
+  if (!ls.length) wrap.append(h('p', {class:'card soon', text:'Coming soon.'}));
+  ls.forEach(l => wrap.append(lessonBlock(l)));
+  return wrap;
+}
+
+function store() { try { return JSON.parse(localStorage.getItem('hub-checks') || '{}'); } catch (e) { return {}; } }
+function saveStore(o) { try { localStorage.setItem('hub-checks', JSON.stringify(o)); } catch (e) {} }
+
+function checklist(key, filterFn) {
+  const seen = new Set(), items = [];
+  taught().filter(filterFn).sort(asc).forEach(l => (l.did || []).forEach(t => { if (!seen.has(t)) { seen.add(t); items.push(t); } }));
+  const saved = store();
+  const box = h('div', {});
+  if (!items.length) box.append(h('p', {class:'soon', text:'Topics appear here after each lesson.'}));
+  items.forEach(t => {
+    const id = key + '|' + t;
+    const cb = h('input', {type:'checkbox'});
+    cb.checked = !!saved[id];
+    cb.addEventListener('change', () => { const s = store(); s[id] = cb.checked; saveStore(s); });
+    box.append(h('label', {class:'chk'}, cb, h('span', {text:t})));
+  });
+  return box;
+}
+
+function revisionPage() {
+  const wrap = h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'Revision and exams'}),
+    h('p', {text:'Topics are added automatically after each lesson. Tick what you have revised.'}));
+  const section = (title, key, fn, open) => {
+    const d = h('details', {class:'card'}, h('summary', {class:'btn', text:title}),
+      h('div', {class:'inner'}, checklist(key, fn), h('h3', {text:'Extra practice'}), links(CONFIG.revisionLinks[key])));
+    if (open) d.setAttribute('open', '');
+    return d;
+  };
+  activeBooks().forEach(n => wrap.append(section('Book ' + n + ' test revision', 'book-' + n, l => l.book === n, true)));
+  wrap.append(section('Semester exam revision', 'semester', l => l.date <= CONFIG.semesterEnd));
+  wrap.append(section('End of year exam revision', 'year', () => true));
+  return wrap;
+}
+
+function ketPage() {
+  const k = CONFIG.ket;
+  const block = (title, content) => h('section', {class:'card'}, h('h3', {text:title}), content);
+  return h('div', {}, h('p', {}, h('a', {href:'#home', text:'← Back to home'})), h('h2', {text:'KET (A2 Key) corner'}),
+    block('What is in the exam', list(k.about)),
+    block('Official free practice', links(k.official)),
+    block('Our vocabulary Quizlets', links(k.quizlets)),
+    block('Mock exam dates', list((k.mocks || []).map(m => m.label + (m.note ? ': ' + m.note : '')), 'Coming soon')));
+}
+
+function render() {
+  const [page, anchor] = (location.hash.slice(1) || 'home').split('/');
+  app.replaceChildren();
+  if (page.startsWith('book-')) app.append(bookPage(Number(page.slice(5))));
+  else if (page === 'revision') app.append(revisionPage());
+  else if (page === 'ket') app.append(ketPage());
+  else app.append(homePage());
+  const cur = page.startsWith('book-') ? 'home' : page;
+  document.querySelectorAll('nav a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+  const target = anchor && document.getElementById('lesson-' + anchor);
+  if (target) target.scrollIntoView(); else window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', render);
+render();
+</script>
 </body>
 </html>
